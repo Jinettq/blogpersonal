@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Blog</title>
+
+<!-- Insertamos el archivo CSS compilado y comprimido -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!--Insertamos jQuery dependencia de Bootstrap-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--Insertamos el archivo JS compilado y comprimido -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--crea una barra gris iluminada en negro  -->
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+    <!--agrega elementos al encabezado  -->
+    <div class="navbar-header">
+
+        <!--colapse significa que tiene contenido para mostrar  -->
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+          <!--icon bar crea menus agrupados -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>     
+
+      </button>
+
+      <!--icon bar crea menus agrupados -->
+      <a class="navbar-brand" href="#">Miss Jin</a>
+    </div>
+    
+    <!--significa que las barras de navegacion tienen contenido -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+         <!--barra de navegacion que contiene elementos de una lista -->
+      <ul class="nav navbar-nav">
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#movies">Películas</a></li>
+        <li><a href="#books">Juegos</a></li>
+        <li><a href="#contact">Acerca de mí</a></li>
+      </ul>
+    </div>
+
+</nav>
+
+
+<!--ponemos un contenedor con un encabezado  -->
+<div class="container">
+	
+    <!--page header permite agregarle espacio alrededor del encabezado, un margen y un borde de 1px  -->
+    <h2 class="page-header" id="viajes">Destinos que tienes que visitar</h2>
+  
+    <center>
+        <div class="viaje_mainDiv"> 
+            <img src="italia.jpg">
+
+            <!--pone el texto con sólo la 1ra letra en mayus en cada palabra  
+                // kbd hace que el texto tenga fondo negro y letra cuadrada ademas de bordes redondos-->
+            <h4 class="text-capitalize"><kbd>coliseo de italia</kbd></h4>
+            
+            <!--añade una linea horizontal o un espacio grande -->
+            <hr>
+
+            <!--text succes pone verde el texto // text capital con letra inicial en mayus-->
+            <h5 class="text-success text-capitalize" >visité este lugar en diciembre de 2018</h5>
+
+            <!--pone el texto en color gris claro -->
+            <p class="text-muted" >Los mejores viajes son los que no se planean </p>
+
+        </div>
+    </center>
+
+<br><br>
+
+</body>
+</html>

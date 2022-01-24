@@ -1,0 +1,14 @@
+.viaje_mainDiv
+{
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.viaje_mainDiv img
+{
+  width: 100%;
+}
+
+.viaje_mainDiv h5 , .viaje_mainDiv p
+{
+margin: 20px;
+}
