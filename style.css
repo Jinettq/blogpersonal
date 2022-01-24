@@ -8,7 +8,66 @@
   width: 100%;
 }
 
-.viaje_mainDiv h5 , .viaje_mainDiv p
+.viaje_mainDiv h5 , .viaje_mainDiv p, .text-capitalize
 {
 margin: 20px;
+font-size: 20px;
 }
+
+.text-capitalize
+{
+  font-size: 30px;
+}
+
+#myNavbar, #minombre
+{
+  font-size: 30px;
+}
+
+#viajes, #peliculas, #libros
+{
+  text-align: center;
+}
+
+.peliculas
+{
+    font-size: 30px;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.pelicula_head i
+{
+float: right;
+}
+
+.pelicula_text span
+{
+color: orange;
+}
+
+#descripcionpeli1, #descripcionpeli2
+{
+  font-size: 20px;
+}
+
+.libros
+{
+    margin-bottom: 20px;
+}
+
+#acercademi iframe
+{
+    width: 100%;
+}
+
+#libro1
+{
+  width: 93%;
+}
+#libro2
+{
+  width: 90%;
+}
+  

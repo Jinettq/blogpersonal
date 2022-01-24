@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body id="fondo">
 
     <!--crea una barra gris iluminada en negro  -->
 <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
@@ -38,7 +38,7 @@
       </button>
 
       <!--icon bar crea menus agrupados -->
-      <a class="navbar-brand" href="#">Miss Jin</a>
+      <a id="minombre" class="navbar-brand" href="#">Miss Jin</a>
     </div>
     
     <!--significa que las barras de navegacion tienen contenido -->
@@ -47,9 +47,9 @@
          <!--barra de navegacion que contiene elementos de una lista -->
       <ul class="nav navbar-nav">
         <li><a href="#videos">Videos</a></li>
-        <li><a href="#movies">Películas</a></li>
-        <li><a href="#books">Juegos</a></li>
-        <li><a href="#contact">Acerca de mí</a></li>
+        <li><a href="#peliculas">Películas</a></li>
+        <li><a href="#libros">Juegos</a></li>
+        <li><a href="#acercademi">Acerca de mí</a></li>
       </ul>
     </div>
 
@@ -64,7 +64,7 @@
   
     <center>
         <div class="viaje_mainDiv"> 
-            <img src="italia.jpg">
+            <img src="https://th.bing.com/th/id/R.b8a327fc61ce514680ff94e4cbe1e5e9?rik=9o14YzbOw16PIQ&riu=http%3a%2f%2fwww.viajejet.com%2fwp-content%2fviajes%2fColiseo-romano-Roma-Italia.jpg&ehk=epGl1YeG5%2fSs9a1zujQW7YiyOL8usSbFjsD4%2fhRNtUc%3d&risl=&pid=ImgRaw&r=0">
 
             <!--pone el texto con sólo la 1ra letra en mayus en cada palabra  
                 // kbd hace que el texto tenga fondo negro y letra cuadrada ademas de bordes redondos-->
@@ -74,7 +74,7 @@
             <hr>
 
             <!--text succes pone verde el texto // text capital con letra inicial en mayus-->
-            <h5 class="text-success text-capitalize" >visité este lugar en diciembre de 2018</h5>
+            <h5 class="text-success text-capitalize" >Próximo destino para visitar</h5>
 
             <!--pone el texto en color gris claro -->
             <p class="text-muted" >Los mejores viajes son los que no se planean </p>
@@ -83,6 +83,133 @@
     </center>
 
 <br><br>
+
+<!--AQUI EMPIEZA EL CODIGO DE LA CLASE 70 -->
+
+<!--page header permite agregarle espacio alrededor del encabezado, un margen y un borde de 1px  -->
+<h2 class="page-header" id="peliculas">Reseñas de películas</h2>
+
+<!--colapse significa que tiene contenido para mostrar  -->
+<!--bg primary agrega al encabezado un fondo azul  -->
+<div class="bg-primary peliculas" data-toggle="collapse" data-target="#wonderwoman" >
+
+  <!--glificon agrega un iccono a la barra, dice FILM entonces es un icono de pelicula  -->
+  <!--fa-sort-desc es el icono de la flechita que apunta para abajo y deja desplegar  // 
+    LA /I ES PARA QUE EL MENU SEA DEL ANCHO DEL CONTENEDOR -->
+    <span class="glyphicon glyphicon-film" ></span> Wonder Woman <i class="fa fa-sort-desc" ></i>
+  </div>
+
+
+  <!--colapse es que tiene contenido dentro  -->
+  <div id="wonderwoman" class="collapse">
+
+	  <div class="pelicula_text" >
+
+      <!--colapse es que tiene contenido dentro  -->
+      <!--image responsive es que se deja ver bien en cualquier pantalla  -->
+       <!--image thumbnail le pone un borde gris a la imagen  -->
+        <img src="https://th.bing.com/th/id/OIP.WI2uOk9-vMt7OB5InJ4EywHaKl?pid=ImgDet&rs=1" class="img-responsive img-thumbnail"> 
+
+        <!--sucess= color verde oscuro // capitalizable= con cada letra inicial el mayus  -->
+		  <h5 class="text-success text-capitalize">Una gran película sobre la super heroína de la liga de la justicia.
+
+        <!--pone iconos de estrellitas para la calificacion  -->
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+        <span class="glyphicon glyphicon-star" ></span>
+      </h5>
+
+
+		  <p id="descripcionpeli1" >Una película increíble con grandes escenas y muy buenos efectos especiales.</p>
+
+	  </div>
+  
+  </div>
+
+  <!--repites lo mismo pero para la pelicula2  -->
+
+  <div class="bg-primary peliculas" data-toggle="collapse" data-target="#sing2" >
+
+    <span class="glyphicon glyphicon-film" ></span> Sing 2<i class="fa fa-sort-desc" ></i>
+  </div>
+
+  <div id="sing2" class="collapse">
+
+  	<div class="peli_text">
+
+       <img src="https://image.tmdb.org/t/p/w500/74MBSuhyMaC8QQKeVKlrSnocFFD.jpg" class="img-responsive img-thumbnail" >
+
+	   <h5 class="text-success text-capitalize">Buena Película Para Los Niños. 
+
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star" ></span>
+       <span class="glyphicon glyphicon-star-empty" ></span>
+
+      </h5>
+
+	   <p id="descripcionpeli2">Una película sobre amistad, valores y donde te invita a seguir tus sueños.</p>
+  	
+    </div>
+
+
+  </div>
+
+<!--page header permite agregarle espacio alrededor del encabezado, un margen y un borde de 1px  -->
+  <h2 class="page-header" id="libros">Lista de libros</h2>
+
+  <!--COL crea una tabla o rejilla para poner elementos // LG, MD, SM y XS hace referencia a los tamaños de pantalla
+  permite que se adapte a cualquier dispositivo cuando lo estes viendo  -->
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 book">
+    <img id="libro1" src="https://i0.wp.com/www.actualidadmascotas.com/wp-content/uploads/2015/08/Gato-callejero-bob.jpg?ssl=1" class="img-responsive">
+    
+    <hr>
+    <a href="https://books.apple.com/ec/book/un-gato-callejero-llamado-bob/id743810474">Click para saber donde encontrarlo</a>
+  </div>
+
+
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 book">
+    <img id="libro2" src="https://libroveolibroleo.com/wp-content/uploads/2020/04/El-gato-que-curaba-corazones-385x600.jpg" class="img-responsive">
+    <hr >
+    <a href="https://www.amazon.com.mx/El-gato-que-curaba-corazones/dp/8416634475">Click para saber donde encontrarlo</a>
+  </div>
+
+    
+<section id="acercademi">
+  <p>......</p>
+
+  <h2 class="page-header" id="peliculas">Acerca de mí</h2>
+
+  <!--inserta un mapa  -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0"  allowfullscreen=""></iframe>
+
+  <hr>
+
+  <!--img circle crea la imagen con forma redonda y la adapta con los COL a todas las pantallas  -->
+  <img src="https://th.bing.com/th/id/R.964f5f4e167f7a4c4391260dd5231e6b?rik=fl5nyYBrK1WNHA&riu=http%3a%2f%2fwww.mundogatos.com%2fUploads%2fmundogatos.com%2fImagenesGrandes%2ffotos-de-gatitos-7.jpg&ehk=muO2GWmBzRiibqUFezM7Nza3wi4TvK6pfesyysMvvYs%3d&risl=&pid=ImgRaw&r=0" class="img-responsive img-circle col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  <h3>Jin</h3>
+
+        <div class="contacto" >
+
+           <a href="mailto:jinett.quinonez@gmail.com?Subject=Hi">
+
+            <!--envelope pone un icono de sobre de mail  -->
+               <h4><i class="fa fa-envelope"></i>&nbsp;&nbsp;jinett.quinonez@gmail.com</h5>
+            </a> 
+
+           <a href="#"> 
+
+            <!--pone un icono de IG  -->
+               <h4><i class="fa fa-instagram" ></i>&nbsp;&nbsp;jinqz</h5>
+            </a> 
+        </div>
+
+</section>
+
+  </div>
 
 </body>
 </html>
